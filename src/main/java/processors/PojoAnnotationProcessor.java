@@ -11,6 +11,7 @@ import javax.annotation.processing.AbstractProcessor;
 import javax.annotation.processing.RoundEnvironment;
 import javax.lang.model.SourceVersion;
 import javax.lang.model.element.*;
+import javax.lang.model.type.TypeKind;
 import javax.lang.model.type.TypeMirror;
 import javax.lang.model.util.ElementFilter;
 import java.util.Collections;
@@ -135,7 +136,7 @@ public class PojoAnnotationProcessor extends AbstractProcessor {
         public boolean apply(MethodSpec input) {
 
             return input.getMethodName().equals(EQUALS) &&
-                    input.getReturnType().toString().equals(BOOLEAN) &&
+                    input.getReturnType().getKind() == TypeKind.BOOLEAN &&
                     input.getModifiers().equals(Sets.newHashSet(Modifier.PUBLIC)) &&
                     input.getParameters().size() == EQUALS_METHOD_PARAMS_COUNT;
         }
@@ -149,7 +150,7 @@ public class PojoAnnotationProcessor extends AbstractProcessor {
             return input.getMethodName().equals(HASH_CODE)
                     && input.getModifiers().equals(Sets.newHashSet(Modifier.PUBLIC)) &&
                     input.getParameters().isEmpty() &&
-                    input.getReturnType().toString().equals(INT);
+                    input.getReturnType().getKind() == TypeKind.INT;
         }
     }
 
