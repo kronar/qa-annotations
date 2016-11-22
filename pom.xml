@@ -43,6 +43,8 @@
                     <compilerArgument>-proc:none</compilerArgument>
                     <source>1.7</source>
                     <target>1.7</target>
+                    <testSource>1.8</testSource>
+                    <testTarget>1.8</testTarget>
                 </configuration>
 
             </plugin>
