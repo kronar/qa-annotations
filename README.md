@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/kronar/qa-annotations.png)](https://travis-ci.org/kronar/qa-annotations)
 # qa-annotations
 Example of how to use annotation processing for quality assurance needs
 
