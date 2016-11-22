@@ -29,7 +29,9 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+
     <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.build.testResources>src/test/resources</project.build.testResources>
     </properties>
 
