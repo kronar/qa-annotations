@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.org/kronar/qa-annotations.png)](https://travis-ci.org/kronar/qa-annotations)
-[![Coverage Status](https://coveralls.io/repos/kronar/qa-annotations/badge.png?branch=master)](https://coveralls.io/repos/kronar/qa-annotation?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/kronar/qa-annotations/badge.svg?branch=master)](https://coveralls.io/github/kronar/qa-annotations?branch=master)
 # qa-annotations
 Example of how to use annotation processing for quality assurance needs
 
