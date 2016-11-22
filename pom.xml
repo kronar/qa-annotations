@@ -15,7 +15,7 @@
             <artifactId>guava</artifactId>
             <version>20.0</version>
         </dependency>
-  <dependency>
+        <dependency>
             <groupId>com.google.testing.compile</groupId>
             <artifactId>compile-testing</artifactId>
             <version>0.10</version>
@@ -38,17 +38,17 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.3</version>
+                <version>3.5.1</version>
                 <configuration>
                     <compilerArgument>-proc:none</compilerArgument>
-                    <source>1.7</source>
-                    <target>1.7</target>
+                    <source>1.8</source>
+                    <target>1.8</target>
                     <testSource>1.8</testSource>
                     <testTarget>1.8</testTarget>
                 </configuration>
 
             </plugin>
-	     <plugin>
+            <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-resources-plugin</artifactId>
                 <version>3.0.1</version>
